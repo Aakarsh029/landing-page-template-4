@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collage trying to make</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        .svgmaker {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        #i1 {
+            position: relative;
+            transform: translateY(-150px);
+            opacity: 0;
+            transition: all 2s ease;
+        }
+
+        #i1.active {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        #i2 {
+            position: relative;
+            transform: translateX(-150px);
+            opacity: 0;
+            transition: all 2s ease;
+        }
+
+        #i2.active {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+        #i3 {
+            position: relative;
+            transform: translateX(150px);
+            opacity: 0;
+            transition: all 2s ease;
+        }
+
+        #i3.active {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>INDYO organic Private Limited is a fast-growing organic firm that is a godsend to health-conscious people in
+        India and throughout the world. It is the mission of INDYO organic Private Limited to provide high-quality
+        products to health-conscious consumers throughout the globe. Indyo Organic provides its clients with some of the
+        uncompromised high quality and authenticity to customers all over the world by adhering to environmentally
+        responsible production practices and using agri-ingredients in a way that ensures social and economic growth of
+        all parties concerned. They use only organic and chemical-free techniques to grow cereal grains, gluten-free
+        flour, oilseeds, spices, nuts, and sugar cane.</h2>
+    <h2>INDYO organic Private Limited is a fast-growing organic firm that is a godsend to health-conscious people in
+        India and throughout the world. It is the mission of INDYO organic Private Limited to provide high-quality
+        products to health-conscious consumers throughout the globe. Indyo Organic provides its clients with some of the
+        uncompromised high quality and authenticity to customers all over the world by adhering to environmentally
+        responsible production practices and using agri-ingredients in a way that ensures social and economic growth of
+        all parties concerned. They use only organic and chemical-free techniques to grow cereal grains, gluten-free
+        flour, oilseeds, spices, nuts, and sugar cane.</h2>
+    <h2>INDYO organic Private Limited is a fast-growing organic firm that is a godsend to health-conscious people in
+        India and throughout the world. It is the mission of INDYO organic Private Limited to provide high-quality
+        products to health-conscious consumers throughout the globe. Indyo Organic provides its clients with some of the
+        uncompromised high quality and authenticity to customers all over the world by adhering to environmentally
+        responsible production practices and using agri-ingredients in a way that ensures social and economic growth of
+        all parties concerned. They use only organic and chemical-free techniques to grow cereal grains, gluten-free
+        flour, oilseeds, spices, nuts, and sugar cane.</h2>
+    <h2>INDYO organic Private Limited is a fast-growing organic firm that is a godsend to health-conscious people in
+        India and throughout the world. It is the mission of INDYO organic Private Limited to provide high-quality
+        products to health-conscious consumers throughout the globe. Indyo Organic provides its clients with some of the
+        uncompromised high quality and authenticity to customers all over the world by adhering to environmentally
+        responsible production practices and using agri-ingredients in a way that ensures social and economic growth of
+        all parties concerned. They use only organic and chemical-free techniques to grow cereal grains, gluten-free
+        flour, oilseeds, spices, nuts, and sugar cane.</h2>
+    <div class="svgmaker">
+        <h2>INDYO organic Private Limited is a fast-growing organic firm that is a godsend to health-conscious people in
+            India and throughout the world. It is the mission of INDYO organic Private Limited to provide high-quality
+            products to health-conscious consumers throughout the globe. Indyo Organic provides its clients with some of
+            the uncompromised high quality and authenticity to customers all over the world by adhering to
+            environmentally responsible production practices and using agri-ingredients in a way that ensures social and
+            economic growth of all parties concerned. They use only organic and chemical-free techniques to grow cereal
+            grains, gluten-free flour, oilseeds, spices, nuts, and sugar cane.</h2>
+        <svg viewbox="43 5 60 45" style="width: 500rem;">
+            <image id="i1" x="80" y="3" width="15" height="15" xlink:href="./img/1.jpg"></image>
+            <image id="i1" x="59.2" y="4" width="20" height="20" xlink:href="./img/2.jpg"></image>
+            <image id="i3" x="80" y="13.7" width="24" height="19" xlink:href="./img/8.jpg"></image>
+            <image id="i2" x="55.2" y="15" width="24" height="24" xlink:href="./img/4.jpg"></image>
+            <image id="i3" x="70" y="26.5" width="24" height="24" xlink:href="./img/5.jpg"></image>
+            <image id="i2"  x="45" y="29.5" width="24" height="24" xlink:href="./img/7.jpg"></image>
+        </svg>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('#i1');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('#i2');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+      <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('#i3');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
